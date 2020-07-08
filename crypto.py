@@ -39,7 +39,7 @@ class Crypto:
     def _find_text(self, text_file, text_result):
         with open(text_file) as file_object:
             for line in file_object:
-                if line.strip() in text_result:
+                if line.strip().lower() in text_result:
                     print(text_result)
 
 
